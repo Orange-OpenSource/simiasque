@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView  android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:padding="20dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/license_aa_title"
+        android:id="@+id/textView3"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/license_aa_content"
+        android:id="@+id/textView4" />
+</LinearLayout>
+</ScrollView>
