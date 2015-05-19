@@ -21,6 +21,8 @@ and execute gradle command to compile and install the projet to your phone:
 ```
 ./gradlew installDebug
 ```
+##How to use
+Simply launch the application to get a switch that will allow you to turn the overlay mask on/off.
 
 ##Screenshots:
 ![](http://orange-opensource.github.io/simiasque/images/screenshot01.png)
