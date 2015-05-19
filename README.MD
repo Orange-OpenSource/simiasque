@@ -11,7 +11,7 @@ Monkey tests can be really annoying, and browsing among notifications and settin
 - ...
 
 ##How to install
-You can choose to download source code and compile it yourself, or you may want to directly download [this demo apk](https://github.com/Orange-OpenSource/simiasque/raw/master/demo/simiasque-debug.apk)
+You can choose to download source code and compile it yourself, or you may want to directly download and install [this demo apk](https://github.com/Orange-OpenSource/simiasque/raw/master/demo/simiasque-debug.apk)
 
 if you prefer to compile it yourself, juste clone our repo
 ```
