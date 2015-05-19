@@ -1,9 +1,23 @@
-SIMIASQUE
-Simiasque is an android application enabling developpers to hide the status bar under an overlay mask.
-This app is designed for developpers, aiming to prevent stress tests (monkey tests) to browse notifications and settings rather than the application being tested.
+#SIMIASQUE
 
-Author:
+##What is Simiasque?
+Simiasque is an android application designed for developpers. It allows them to manually hide the status bar under an overlay mask, preventing stress tests (monkey tests) from clicking it.
+
+##Why
+Monkey tests can be really annoying, and browsing among notifications and settings rather that the application seams to be a frequent issue. *This app can be a simple work around to a common problem.*
+(http://stackoverflow.com/questions/7457730/preventing-status-bar-expansion)
+(http://stackoverflow.com/questions/22251327/how-to-prevent-monkey-to-open-status-bar)
+(http://stackoverflow.com/questions/25284233/prevent-status-bar-for-appearing-android-modified/25308654#25308654)
+...
+
+##Screenshots:
+![](http://orange-opensource.github.io/simiasque/images/screenshot01.png)
+![](http://orange-opensource.github.io/simiasque/images/screenshot02.png)
+![](http://orange-opensource.github.io/simiasque/images/screenshot03.png)
+
+
+##Author:
 Arnaud Ruffin
 
-License:
+##License:
 MPL-2.0
