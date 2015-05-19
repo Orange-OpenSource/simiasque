@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView  android:layout_width="match_parent"
+    <!--
+  ~ Simiasque
+  ~ Copyright (C) 2015 Orange
+  ~ Authors: arnaud.ruffin@orange.com
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  -->
+
+<ScrollView  android:layout_width="match_parent"
     android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout android:padding="20dp"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" android:layout_margin="5dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/license_aa_title"
-        android:id="@+id/textView3"/>
+        android:text="@string/license_aa_title"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/license_aa_link"
+        android:autoLink="web"
+        android:linksClickable="true"/>
 
     <TextView
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/license_aa_content"
-        android:id="@+id/textView4" />
+        android:text="@string/license_aa_content"/>
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/license_apcompat_title"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/license_apcompat_link"
+        android:autoLink="web"
+        android:linksClickable="true"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/license_apcompat_content" />
 </LinearLayout>
 </ScrollView>
