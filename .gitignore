@@ -2,3 +2,4 @@
 .idea/
 .gradle/
 app/app.iml
+*iml
