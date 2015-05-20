@@ -22,7 +22,21 @@ and execute gradle command to compile and install the projet to your phone:
 ./gradlew installDebug
 ```
 ##How to use
+###User interface 
 Simply launch the application to get a switch that will allow you to turn the overlay mask on/off.
+###Command line
+You can also use adb to toggle the overlay.
+
+To turn it on: 
+```
+adb shell am broadcast -a org.thisisafactory.simiasque.SET_OVERLAY --ez enable true
+```
+To turn it off:
+```
+adb shell am broadcast -a org.thisisafactory.simiasque.SET_OVERLAY --ez enable false
+```
+###From another app
+You can trigger Simiasque from another app using our broadcast receiver. Simply fire an intent with action `org.thisisafactory.simiasque.SET_OVERLAY` and an extra boolean `enable` set to true to show the mask and false to hide it.
 
 ##Screenshots:
 ![](http://orange-opensource.github.io/simiasque/images/screenshot01.png)
