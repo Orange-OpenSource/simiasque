@@ -1,28 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Simiasque
   ~ Copyright (C) 2015 Orange
-  ~ Authors: arnaud.ruffin@orange.com
+  ~ Authors: Arnaud Ruffin , Mads Kalør
   ~
   ~ This Source Code Form is subject to the terms of the Mozilla Public
   ~ License, v. 2.0. If a copy of the MPL was not distributed with this
   ~ file, You can obtain one at http://mozilla.org/MPL/2.0/.
-  -->
-
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.thisisafactory.simiasque">
+    package="org.thisisafactory.simiasque" >
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
-
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
         <activity android:name=".MyActivity_" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <service android:name=".ViewService_"/>
+
+        <service android:name=".ViewService_" />
+
+        <receiver
+            android:name=".SimiasqueReceiver_"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="org.thisisafactory.simiasque.SET_OVERLAY" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
