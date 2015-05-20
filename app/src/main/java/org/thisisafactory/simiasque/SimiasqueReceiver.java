@@ -1,3 +1,13 @@
+/*
+ * Simiasque
+ * Copyright (C) 2015 Orange
+ * Authors: Mads Kalør, Arnaud Ruffin
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 package org.thisisafactory.simiasque;
 
 import android.content.BroadcastReceiver;
@@ -8,7 +18,7 @@ import org.androidannotations.annotations.EReceiver;
 import org.androidannotations.annotations.ReceiverAction;
 
 /**
- * Broadcast receive for toggling Simiasque.
+ * Broadcast receiver for toggling Simiasque.
  */
 @EReceiver
 public class SimiasqueReceiver extends BroadcastReceiver {
@@ -29,26 +39,5 @@ public class SimiasqueReceiver extends BroadcastReceiver {
         // empty, will be overridden in generated subclass
     }
 
-    /*
-    @ReceiverAction
-    void anotherAction(@ReceiverAction.Extra("specialExtraName") String valueString, @ReceiverAction.Extra long valueLong) {
-        // ...
-    }
-*/
-/*
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if(intent.getAction().equals("org.thisisafactory.simiasque.SET_OVERLAY")) {
-            if (intent.hasExtra(EXTRA_ENABLE)) {
-                boolean enable = intent.getBooleanExtra(EXTRA_ENABLE, false);
-                if (enable) {
-                    ViewService_.intent(context).showMask().start();
-                } else {
-                    ViewService_.intent(context).hideMask().start();
-                }
-            } else {
-                Log.i("Simiasque", "Missing EXTRA_ENABLE in broadcast");
-            }
-        }
-    }*/
+
 }
